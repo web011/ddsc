@@ -1,28 +1,27 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <router-view></router-view>
+    <tabbar v-show="$route.meta.showBottomTabbar" style="margin-bottom:-5px;"></tabbar>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Tabbar from './components/Tabbar/Tabbar';
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  data(){
+    return {
+
+    }
+  },
+  components:{
+    Tabbar
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style land="scss">
+.van-tabbar--fixed {
+  margin-bottom: -1px;
 }
 </style>
