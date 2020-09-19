@@ -3,6 +3,6 @@ const app = express();
 
 app.use('/',express.static(__dirname + '/web'))
 
-app.listen(8080, ()=>{
+app.listen(3000, ()=>{
     console.log("http://127.0.0.1:3000")
 })
