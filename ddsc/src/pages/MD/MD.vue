@@ -47,7 +47,7 @@
                 <span style="color:rgb(88, 89, 91);font-size:12.48px;" class="mt-2 mb-4">{{item.title}}</span>
             </div>
         </div>
-        <div class="mt-2 bg-white d-flex jc-between ai-cneter pl-3 pr-3 fw w-100 pt-3">
+        <div class="mt-2 bg-white d-flex ai-cneter pl-3 pr-3 fw w-100 pt-3">
             <div class="duogneng d-flex flex-column jc-center ai-center" v-for="(item,i) in spimgtitle " :key="i" @click="tiaozhang(item.icon)">
                 <img style="width:25.9125px;height:25.9125px;" :src="item.img" alt="">
                 <span style="color:rgb(88, 89, 91);font-size:12.48px;" class="mt-2 mb-4">{{item.title}}</span>
